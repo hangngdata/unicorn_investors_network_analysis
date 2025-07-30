@@ -61,13 +61,13 @@ In terms of industry, Enterprise Tech dominates both the total valuation and uni
 
 I built an investor-investor co-investing network with each node representing an investor and each edge existing if the two investors invested in a same company. The network consists of 1357 nodes (investors) and 2973 edges (co-investments).
 
-![alt-text](visuals/treemap_count.png)
+![alt-text](visuals/top50_communities.png)
 
 ### Who are the power players?
 
 Most active investors include Accel, Andreessen Horowitz, Sequoia Capital, Insight Partners and Tiger Global Management. Prominently, Accel is the most connected, having co-invested with 99 other investors.
 
-![alt-text](visuals/top50_communities.png)
+![alt-text](visuals/accel_neighbors.png)
 
 ### Communities and Cliques
 
