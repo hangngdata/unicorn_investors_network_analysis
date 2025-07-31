@@ -4,7 +4,7 @@ Every month, new startups gallop into the $1B+ unicorn club. As of July 2025, CB
 
 This project dives into the [CB Insights unicorn dataset](https://www.cbinsights.com/research-unicorn-companies) to map the global unicorn ecosystem and decode the investor networks behind it.
 
-Through exploratory data analysis and network science, we explore:
+Through exploratory data analysis and network science, I explored:
 - Where unicorns live and how they’ve grown over time
 - Which industries dominate the billion-dollar club
 - Who the power investors are and how they form alliances
@@ -19,7 +19,7 @@ The US is home to over half the global unicorn herd (56%), followed by China, In
 
 ![alt-text](visuals/treemap_count.png)
 
-When we look at total valuation, the leaderboard stays similar: the US dominates, China comes second, and the UK and India fight for third place.
+Regarding total valuation, the leaderboard stays similar: the US dominates, China comes second, and the UK and India fight for third place.
 
 ![alt-text](visuals/line_top_valuation.png)
 
@@ -33,13 +33,13 @@ Let's trace back where in the world the unicorns blew up.
 
 ![alt-text](visuals/line_trend_country_count.png)
 
-Zooming in geographically, we see that the US saw a 6× jump in 2021 alone. Meanwhil, China started building its herd earlier, with a boom starting in 2015. Countries like France and South Korea saw more stop-and-go growth with years of zero new unicorns.
+Zooming in geographically, we see that the US saw a 6× jump in 2021 alone. Meanwhile, China started building its herd earlier, with a boom starting in 2015. Countries like France and South Korea saw more stop-and-go growth with years of zero new unicorns.
 
 ### Which industries dominate?
 
 Early unicorns clustered in Consumer & Retail and Financial Services. But in 2018, Enterprise Tech broke through.
 
-Industrials lag behind in unicorn count but punch above their weight in total valuation, outpacing even Financial Services.
+Industrials lag behind in unicorn count but punch above their weight in total valuation, outperforming Financial Services and Consumer & Retail.
 
 ![alt-text](visuals/line_trend_industry_count.png)
 
@@ -69,21 +69,21 @@ Most active investors include Accel, Andreessen Horowitz, Sequoia Capital, Insig
 
 ![alt-text](visuals/accel_neighbors.png)
 
-### Communities and Cliques
+### Communities and cliques
 
-Using the Louvain algorithm, I detected 4 investor communities. These represent clusters of investors who repeatedly back unicorns together, often signaling regional networks or strategic alliances.
+Using the Louvain algorithm, I detected 4 investor communities. These represent clusters of investors who repeatedly back unicorns up together, often signaling regional networks or strategic alliances.
 
 The largest detected community consists of 155 investors and 356 co-invesetments. This cluster is the largest group of investors who frequently team up.
 
 ![alt-text](visuals/largest_community.png)
 
-While largest community by Louvain algorithm shows a macro-perspective of the densely connected subgraph of the network, the largest investor clique gives more localized insight into clusters where nodes are fully connected.
+While largest community by the Louvain algorithm shows a macro-perspective of the densely connected subgraph of the network, the largest investor clique gives more localized insight into clusters where nodes are fully connected.
 
 ![alt-text](visuals/largest_clique.png)
 
 The largest clique consists of 7 investors: Kleiner Perkins Caufield & Byers, Andreessen Horowitz, Sequoia Capital, Google Ventures, Founders Fund, General Catalyst and Index Ventures.
 
-Investigation into the unicorns that these investors invested in: Sequoia Capital & Andreessen Horowitz and Sequoia Capital & Index Ventures are the two strongest co-investing pairs. Remote was co-invested by three different pairs, showing that it attracts multiple VCs and is a 'consensus bet'. Founders Fund co-invested together with multiple investors (ie. 6 investors) but only in 1 or 2 unicorns with each. It is more like a "bridge" between investors in the network.
+Investigation into the unicorns reveals: Sequoia Capital & Andreessen Horowitz and Sequoia Capital & Index Ventures are the two strongest co-investing pairs. The unicorn Remote was co-invested by three different pairs, showing that it attracts multiple investors and is a 'consensus bet'. Founders Fund co-invested together with multiple investors (ie. 6 investors) but only in 1 or 2 unicorns with each. It is more like a "bridge" between investors in the network.
 
 ### Co-investing recommender system
 
